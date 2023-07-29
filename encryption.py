@@ -4,7 +4,7 @@ from cryptography.fernet import Fernet
  
 
 class AESEncryption:
-    secrateKey = b"youKnowItsSecretKeyaviralyadav17"
+    secrateKey = b"YOUR_SECURE_KEY_HERE"
     def encrypt(self,password):
         key = base64.b64encode(self.secrateKey)
         # Instance the Fernet class with the key
@@ -27,6 +27,6 @@ class AESEncryption:
 obj = AESEncryption()
 # encryptedPassword = obj.encrypt(password)
 # print("Encrypted Password is : ",encryptedPassword)
-keyy = 'gAAAAABkpQrH46kTj5xVPaYMAjyHU1VnbkkkLIdK4tgPRXSTCJTFrfjRLloo-4D3XVykJ526xip8h7iN9VYETNekil_gnkbJ8Q=='
+# keyy = 'gAAAAABkpQrH46kTj5xVPaYMAjyHU1VnbkkkLIdK4tgPRXSTCJTFrfjRLloo-4D3XVykJ526xip8h7iN9VYETNekil_gnkbJ8Q=='
 decryptedPassword = obj.decrypt(keyy)
 print("Decrypted Password is : ",decryptedPassword)
